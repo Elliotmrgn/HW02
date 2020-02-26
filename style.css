@@ -1,0 +1,28 @@
+body{
+    background-color: gray;
+}
+
+.navbar{
+    padding:0;
+}
+
+.navbar-brand{
+    margin-left:40px;
+    padding: 30px;
+    background-color: cadetblue;
+    color:white;
+    font-size: 30px;
+}
+nav ul li a{
+    color:gray;
+}
+
+.about-me {
+    background-color: white;
+    padding:30px;
+    margin-top:30px;
+}
+.about-title{
+    color: cadetblue;
+    border-bottom: gray;
+}
