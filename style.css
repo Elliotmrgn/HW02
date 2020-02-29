@@ -1,17 +1,9 @@
-html, body{
+html, body {
     height: 100%;
-    margin: 0 auto;/*
-    background-image: url("https://images.squarespace-cdn.com/content/v1/578b551ab3db2b2471489e10/1514425303217-GY2UR1C7QK5I18ZKBM14/ke17ZwdGBToddI8pDm48kPVrITFFpIRupy97zDrLIYp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0scl71iiVnMuLeEyTFSXT3qmyMnRwXS3ijD7aYqNwK-F85Yt-Lfbb06S6ComamaVfQ/CQ819+bel+air+beige.jpg?format=2500w");
-    background-repeat: no-repeat;
-    background-size: cover;
-    bac*/
+    margin: 0 auto;
 }
 
-body{
-    overflow: hidden;
-}
-
-.view{
+body {
     height: 100%;
     background-image: url("images/grey-grunge-texture.jpg");
     background-repeat: no-repeat;
@@ -19,11 +11,13 @@ body{
     background-position: center center;
 }
 
-.container{
+.container {
+    position: relative;
     max-width: 980px;
 }
 
 .navbar {
+    position: relative;
     padding: 0;
 }
 
@@ -40,15 +34,16 @@ nav ul li a {
 }
 
 .container {
-    padding-left: 0;
+    padding-left: 15px;
 }
 
 .about-me {
     background-color: white;
     padding: 30px;
+    margin-left: 40px;
     margin-top: 30px;
-    line-height: 30px;;
-    
+    line-height: 30px;
+    ;
 }
 
 .about-title {
@@ -59,11 +54,13 @@ nav ul li a {
     border-bottom: 4px solid rgb(209, 209, 209);
 }
 
-.float-left {
+img {
     margin-right: 10px;
+    height: 150px;
+    width: 150px;
 }
 
-.page-footer{
+.page-footer {
     background-color: grey;
     border-top: 6px solid cadetblue;
     padding-top: 18px;
@@ -71,9 +68,18 @@ nav ul li a {
     font-size: x-small;
 }
 
-@media only screen and (max-width: 768px){
-    img{
-        height: 300px;
-        width: 300px;
+@media only screen  and (max-width: 768px){
+    .about-me {
+        margin-left: 0px;
+    }
+    img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .float-left {
+        float: none;
     }
 }
