@@ -1,23 +1,13 @@
 html, body {
     height: 100%;
-    margin: 0 auto;
 }
 
 body {
-    height: 100%;
     background-image: url("images/grey-grunge-texture.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.container {
-    position: relative;
-    max-width: 980px;
+    background-position: center;
 }
 
 .navbar {
-    position: relative;
     padding: 0;
 }
 
@@ -31,22 +21,30 @@ body {
 
 nav ul li a {
     color: gray;
+    font-size: 20px;
 }
 
-.container {
-    padding-left: 15px;
+.container-fluid {
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 63px;
+    width: auto;
+    max-width: 100%;
 }
 
-.about-me {
+.row {
+    margin-left: 40px;
+    margin-right: 0px;
+}
+
+.content {
     background-color: white;
     padding: 30px;
-    margin-left: 40px;
     margin-top: 30px;
-    line-height: 30px;
-    ;
 }
 
-.about-title {
+#title {
     color: cadetblue;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -54,32 +52,75 @@ nav ul li a {
     border-bottom: 4px solid rgb(209, 209, 209);
 }
 
-img {
+.cat-pic {
     margin-right: 10px;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
+}
+
+.portfolio-pic{
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 25px;
+    line-height: 45px;
 }
 
 .page-footer {
     background-color: grey;
+    color: white;
     border-top: 6px solid cadetblue;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    margin-top: -67px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-size: x-small;
 }
 
-@media only screen  and (max-width: 768px){
-    .about-me {
-        margin-left: 0px;
+.btn{
+    color:white;
+    background-color: cadetblue;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .row {
+        margin-left: 25px;
+        margin-right: 25px;
     }
-    img {
+    .cat-pic {
         height: 250px;
         width: 250px;
     }
 }
 
 @media only screen and (max-width: 640px) {
+   .navbar-brand{
+       width:100%;
+       margin-left: 0;
+       margin-right: 0;
+       text-align: center;
+   }
+
+    nav ul{
+        float: none !important;
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .cat-pic {
+        width: 325px;
+        height: 325px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width:100%;
+    }
     .float-left {
-        float: none;
+        float: none !important;
     }
 }
