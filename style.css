@@ -7,6 +7,7 @@ body {
     background-position: center;
 }
 
+/*                      Navbar              */
 .navbar {
     padding: 0;
 }
@@ -24,70 +25,55 @@ nav ul li a {
     font-size: 20px;
 }
 
-.container-fluid {
-    margin-left: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 63px;
-    width: auto;
-    max-width: 100%;
-}
 
-.row {
-    margin-left: 40px;
-    margin-right: 0px;
-}
 
-.content {
-    background-color: white;
-    padding: 30px;
-    margin-top: 30px;
-}
-
-#title {
+.title {
     color: cadetblue;
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom-style: groove;
     border-bottom: 4px solid rgb(209, 209, 209);
 }
+.content {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    margin-left: 6%;
+}
 
+/*  about  */
 .cat-pic {
     margin-right: 10px;
     height: 200px;
     width: 200px;
 }
-
-.portfolio-pic{
-    margin-bottom: 20px;
-}
-
-p{
+p {
     font-size: 25px;
     line-height: 45px;
 }
 
-.page-footer {
-    background-color: grey;
-    color: white;
-    border-top: 6px solid cadetblue;
-    margin-top: -67px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: x-small;
+/*  portfolio  */
+.portfolio-pic {
+    margin-bottom: 20px;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
-.btn{
-    color:white;
+
+/*  contact  */
+.btn {
+    color: white;
     background-color: cadetblue;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+
+
 @media only screen and (max-width: 768px) {
-    .row {
-        margin-left: 25px;
-        margin-right: 25px;
+    .content{
+        margin-left: auto;
+        margin-right: auto;
     }
     .cat-pic {
         height: 250px;
@@ -96,29 +82,28 @@ p{
 }
 
 @media only screen and (max-width: 640px) {
-   .navbar-brand{
-       width:100%;
-       margin-left: 0;
-       margin-right: 0;
-       text-align: center;
-   }
-
-    nav ul{
+    
+    /*navbar*/
+    .navbar-brand {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    nav ul {
         float: none !important;
-        
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-
-
+    /*about pic*/
     .cat-pic {
         width: 325px;
         height: 325px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        min-width:100%;
+        min-width: 100%;
     }
     .float-left {
         float: none !important;
