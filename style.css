@@ -1,5 +1,5 @@
 html, body {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -7,13 +7,14 @@ body {
     background-position: center;
 }
 
-/*                      Navbar              */
+/***************Navbar************/
+
 .navbar {
     padding: 0;
 }
 
 .navbar-brand {
-    margin-left: 40px;
+    margin-left: 6%;
     padding: 30px;
     background-color: cadetblue;
     color: white;
@@ -25,7 +26,15 @@ nav ul li a {
     font-size: 20px;
 }
 
+/************content************/
 
+.content {
+    background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    margin-left: 6%;
+    margin-bottom: 140px;
+}
 
 .title {
     color: cadetblue;
@@ -34,33 +43,58 @@ nav ul li a {
     border-bottom-style: groove;
     border-bottom: 4px solid rgb(209, 209, 209);
 }
-.content {
-    background-color: white;
-    padding: 30px;
-    margin-top: 30px;
-    margin-left: 6%;
+
+/************footer************/
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 122px;
+    line-height: 122px;
+    background-color: rgb(90, 90, 90);
+    border-top: 8px solid cadetblue;
+    color: white;
+    font-size: small;
 }
 
 /*  about  */
+
 .cat-pic {
     margin-right: 10px;
     height: 200px;
     width: 200px;
 }
+
 p {
     font-size: 25px;
     line-height: 45px;
 }
 
 /*  portfolio  */
+
 .portfolio-pic {
     margin-bottom: 20px;
-    flex: 0 0 50%;
-    max-width: 50%;
+    min-width: 100%;
 }
 
+.margin-fix {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: -54px;
+}
+
+.banner {
+    transform: translateY(-90px);
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: cadetblue;
+}
 
 /*  contact  */
+
 .btn {
     color: white;
     background-color: cadetblue;
@@ -68,10 +102,8 @@ p {
     padding-right: 20px;
 }
 
-
-
 @media only screen and (max-width: 768px) {
-    .content{
+    .content {
         margin-left: auto;
         margin-right: auto;
     }
@@ -82,7 +114,6 @@ p {
 }
 
 @media only screen and (max-width: 640px) {
-    
     /*navbar*/
     .navbar-brand {
         width: 100%;
@@ -98,12 +129,13 @@ p {
     }
     /*about pic*/
     .cat-pic {
-        width: 325px;
-        height: 325px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        min-width: 100%;
+    }
+    .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     .float-left {
         float: none !important;
