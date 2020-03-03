@@ -136,12 +136,15 @@ p {
         height: 400px;
         width: 400px;
     }
+
+    .float-left {
+        float: none !important;
+    } 
+
+    /*portfolio*/
     .col-sm-6 {
         flex: 0 0 100%;
         max-width: 100%;
         
-    }
-    .float-left {
-        float: none !important;
     }
 }
